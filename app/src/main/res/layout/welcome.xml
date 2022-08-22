@@ -70,7 +70,6 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:background="@drawable/lightbutton"
-
         android:text="Login"
         android:textAllCaps="false"
         android:textColor="#700BEF"
@@ -79,5 +78,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/purplebutton"
+        android:text="LogOut"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

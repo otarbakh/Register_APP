@@ -12,7 +12,6 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.example.register_app.Resource
 import com.example.register_app.databinding.LoginBinding
-import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
@@ -61,11 +60,11 @@ class LoginFragment : Fragment() {
                 viewModel.loginState.collectLatest {
                     when (it){
                         is Resource.Success ->{
-                            Toast.makeText(requireContext(),it.data.token, Snackbar.LENGTH_SHORT).show()
+                            Toast.makeText(requireContext(),it.data.token, Toast.LENGTH_SHORT).show()
                         }
 
                         is Resource.Error ->{
-                            Toast.makeText(requireContext(),it.error, Snackbar.LENGTH_SHORT).show()
+                            Toast.makeText(requireContext(),it.error, Toast.LENGTH_SHORT).show()
                         }
 
                         is Resource.Loading ->{
