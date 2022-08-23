@@ -39,7 +39,7 @@ class WelcomeFragment: Fragment() {
         save(KEY_AUTH.toString(),)
     }
 
-
+    // OTO KAI BICHIA
     private fun setOnCliclisteners(){
         binding.btnLogin.setOnClickListener {
             findNavController().navigate(R.id.action_welcomeFragment_to_loginFragment)
