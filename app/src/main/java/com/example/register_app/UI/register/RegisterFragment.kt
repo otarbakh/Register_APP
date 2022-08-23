@@ -1,5 +1,5 @@
 package com.example.register_app.UI.register
-
+// TEST TEXT 2
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
