@@ -40,6 +40,7 @@ class WelcomeFragment: Fragment() {
     }
 
     // OTO KAI BICHIA
+    //oto kai bichia
     private fun setOnCliclisteners(){
         binding.btnLogin.setOnClickListener {
             findNavController().navigate(R.id.action_welcomeFragment_to_loginFragment)
